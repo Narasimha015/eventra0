@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: eventra-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: EVENTRA_JWT_SECRET
+        generateValue: true
+      - key: EVENTRA_DB_PATH
+        value: /var/data/eventra.sqlite
+      - key: EVENTRA_CORS_ORIGIN
+        sync: false
+    disk:
+      name: eventra-data
+      mountPath: /var/data
+      sizeGB: 1
