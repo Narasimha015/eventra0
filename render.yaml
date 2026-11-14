@@ -2,6 +2,7 @@ services:
   - type: web
     name: eventra-api
     runtime: node
+    plan: free
     rootDir: server
     buildCommand: npm ci
     startCommand: npm start
@@ -11,11 +12,5 @@ services:
         value: production
       - key: EVENTRA_JWT_SECRET
         generateValue: true
-      - key: EVENTRA_DB_PATH
-        value: /var/data/eventra.sqlite
       - key: EVENTRA_CORS_ORIGIN
         sync: false
-    disk:
-      name: eventra-data
-      mountPath: /var/data
-      sizeGB: 1
