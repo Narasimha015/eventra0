@@ -1,0 +1,121 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "name": "Admin User",
+      "email": "admin@eventra.local",
+      "role": "Administrator",
+      "passwordHash": "67fdb11caca270dedfccfe30d800b117cba6221dcc741acf10968cca7b83cd3f37367df708b85f6d7e0d3ae0596e7f916568bc117ee04accb395278adfd6b195"
+    },
+    {
+      "id": "u-org",
+      "name": "Event Organizer",
+      "email": "organizer@eventra.local",
+      "role": "Organizer",
+      "passwordHash": "0bff856b8c63fa5682a796aabc6a3cb33b268d6fa84aee1712bab4a8a696f74bb0e3ef550bb8c8945c76e2b228ddf70b1d0811953a60b3a01ccf5a7815d5f373"
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "name": "Tech Summit 2026",
+      "date": "2026-09-18",
+      "venue": "Grand Convention Hall",
+      "status": "Live",
+      "registrations": 842,
+      "capacity": 1000,
+      "revenue": 412500
+    },
+    {
+      "id": "e2",
+      "name": "Startup Expo",
+      "date": "2026-10-04",
+      "venue": "Innovation Park",
+      "status": "Upcoming",
+      "registrations": 524,
+      "capacity": 750,
+      "revenue": 286000
+    },
+    {
+      "id": "e3",
+      "name": "Design Week",
+      "date": "2026-10-22",
+      "venue": "Creative Arts Center",
+      "status": "Planning",
+      "registrations": 216,
+      "capacity": 500,
+      "revenue": 108000
+    }
+  ],
+  "attendees": [
+    {
+      "id": "TICK-8012",
+      "name": "Aarav Sharma",
+      "email": "aarav@example.com",
+      "ticket": "VIP Pass",
+      "event": "Tech Summit 2026",
+      "status": "Checked In",
+      "time": "09:15 AM"
+    },
+    {
+      "id": "TICK-8013",
+      "name": "Priya Patel",
+      "email": "priya@example.com",
+      "ticket": "General Access",
+      "event": "Tech Summit 2026",
+      "status": "Pending",
+      "time": "—"
+    },
+    {
+      "id": "TICK-8014",
+      "name": "Rohan Verma",
+      "email": "rohan@example.com",
+      "ticket": "Student Pass",
+      "event": "Tech Summit 2026",
+      "status": "Checked In",
+      "time": "09:42 AM"
+    },
+    {
+      "id": "TICK-8015",
+      "name": "Ananya Iyer",
+      "email": "ananya@example.com",
+      "ticket": "VIP Pass",
+      "event": "Tech Summit 2026",
+      "status": "Pending",
+      "time": "—"
+    }
+  ],
+  "venues": [
+    {
+      "id": "v1",
+      "name": "Grand Convention Hall",
+      "capacity": 1200,
+      "rate": "₹1.8L / day",
+      "status": "Available"
+    },
+    {
+      "id": "v2",
+      "name": "Innovation Park",
+      "capacity": 750,
+      "rate": "₹95K / day",
+      "status": "Reserved"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "vendor1",
+      "name": "StageCraft Productions",
+      "category": "Production",
+      "budget": "₹2.4L",
+      "status": "Confirmed"
+    },
+    {
+      "id": "vendor2",
+      "name": "FreshBite Catering",
+      "category": "Catering",
+      "budget": "₹1.1L",
+      "status": "Confirmed"
+    }
+  ],
+  "audit": []
+}
